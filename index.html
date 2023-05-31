@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="muzi55" />
+    <meta name="description" content="페이지 설명" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1" />
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Muzi_web" />
+    <meta property="og:title" content="영화 설명사이트" />
+    <meta property="og:description" content="무지의 영화리뷰 사이트" />
+    <meta property="og:image" content="https://image.tmdb.org/t/p/w500" />
+    <meta property="og:url" content="그래프에서 영구 ID로 사용될 개체의 표준 URL" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title></title>
+  </head>
+
+  <body>
+    <div class="section">
+      <header>
+        <h1 class="hidden">Muzi_Movies</h1>
+        <form action="#" method="POST" id="search_bar">
+          <input type="text" id="search" placeholder="Search" />
+          <label class="hidden" for="serach">검색</label>
+          <button>검색</button>
+        </form>
+        <nav>
+          <ul>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Coming Soon</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Watch Later</a></li>
+          </ul>
+        </nav>
+        <div class="toggle_btn">
+          <img src="https://i.postimg.cc/y8rMmGz3/icons8-50.png" alt="토글 버튼" />
+        </div>
+        <div class="last_activity">
+          <ul>
+            <li></li>
+            <!-- <li>영화 투표수</li> -->
+          </ul>
+          <h3 hidden>LAST ACTIVITY</h3>
+          <ul hidden>
+            <li>
+              <div class="img_box"></div>
+              <div class="text_box">
+                <h2>백학동 김사범님</h2>
+                <p>상태 메세지</p>
+                <p>32 minutes ago</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="releases">
+        <h2>New Releases</h2>
+        <div class="movie_cards">
+          <ul>
+            <li>
+              <p class="rank">2.5</p>
+              <div class="movie_img"></div>
+              <h3>영화 제목</h3>
+              <p class="description">영화 내용</p>
+            </li>
+            <li>
+              <p class="rank">2.5</p>
+              <div class="movie_img"></div>
+              <h3>영화 제목</h3>
+              <p class="description">영화 내용</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script lang="javascript" src="main.js"></script>
+  </body>
+</html>
