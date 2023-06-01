@@ -41,15 +41,17 @@ window.addEventListener("load", () => {
       for (let i = 0; i < movies.length; i++) {
         let template = `
       <li>
-      <p class="rank">${movies[i].vote_average}</p>
-      <div class="movie_img" style=
-      "background: url('https://image.tmdb.org/t/p/w300${movies[i].backdrop_path}') bottom center"
-      "background-size="cover"></div>
-      <h3>${movies[i].title}</h3>
-      <p class="description">${movies[i].overview}</p>
+        <p class="rank">${movies[i].vote_average}</p>
+          <div class="movie_img">
+            <img src="https://image.tmdb.org/t/p/w300${movies[i].backdrop_path}" alt="영화 포스트">
+          </div>
+          <h3>${movies[i].title}</h3>
+        <p class="description">${movies[i].overview}</p>
       </li>
       `;
-
+        // <div class="movie_img" style=
+        // "background: url('https://image.tmdb.org/t/p/w300${movies[i].backdrop_path}') bottom center"
+        // "background-size="cover"></div>
         el(".movie_cards ul").insertAdjacentHTML("beforeend", template);
         els(".movie_cards ul li")[i].addEventListener("click", () => {
           alert(`이 영화의 ID는 ? => ${movies[i].id}`);
